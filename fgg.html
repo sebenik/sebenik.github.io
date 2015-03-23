@@ -22,6 +22,53 @@
 						<a href="./"><h1>Žiga Šebenik</h1></a>
 					</div>
 				</div>
+				<div class="small-12 columns text-center">
+					<div class="menu">
+					<div class="menu-wrapper">
+						<ul class="menu-items">
+							<li class="menu-item">
+								<button class="menu-item-button" name="thesis.html">
+									<i class="menu-item-icon icon fa fa-graduation-cap"><br/><span>Thesis</span></i>
+								</button>
+								<div class="menu-item-bounce"></div>
+							</li>
+							<li class="menu-item">
+								<button class="menu-item-button" name="fgg.html">
+									<i class="menu-item-icon icon fa fa-cubes"><br/>Fgg</i>
+								</button>
+								<div class="menu-item-bounce"></div>
+							</li>
+							<li class="menu-item">
+								<button class="menu-item-button" name="other.html">
+									<i class="menu-item-icon icon fa fa-github"><br/>Other</i>
+								</button>
+								<div class="menu-item-bounce"></div>
+							</li>
+						</ul>
+						<button class="menu-toggle-button">
+							<i class="fa fa-plus menu-toggle-icon"></i>
+						</button>
+					</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="panel">
+							<div class="panel_content">
+								<h1>Faculty of Civil and Geodetic Engineering, University of Ljubljana (2014)</h1>
+								<h5>About:</h5>
+								<p>From 2014 I work at Chair of Structural and Earthquake Engineering, <a href="http://www3.fgg.uni-lj.si/en/">Faculty of Civil and Geodetic Engineering, University of Ljubljana.</a> My work revolves around database & software devolopment to provide new tools for complex and time consuming analyses.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-12 columns">
+						<h5>Quick overview:</h5>
+					</div>
+				</div>
 
 				<div class="row">
 					<div class="panel">
@@ -87,8 +134,17 @@
 							</div>	
 							<div class="small-12 medium-6 columns">
 								<h2>CGM application</h2>
-								<p>Web application for selection of so called characteristic ground motions proposed by 3R method.</p>
-								Link: <a href="http://kgi-dev.fgg.uni-lj.si/ziga/cgmapp">http://kgi-dev.fgg.uni-lj.si/ziga/cgmapp</a>
+								<p>Web application for selection of so called characteristic ground motions proposed by 3R method. It adopts 4 tier system architecture:</p>
+								<ul class="list">
+									<li>Client tier - provides user interface and runs in clients' browser (HTML5, CSS3 & D3.js)</li>
+									<li>Web tier - handles user requests and provides cross tier communication (PHP)</li>
+									<li>Application tier - runs computational demanding tasks which are managed with HTCondor. (runs custom software devoleped in C, Tcl and OpenSees)</li>
+									<li>Database tier - application is backed with IKPIR database that contains around 18.000 horizontal ground motion components.</li>
+								</ul>
+								<ul class="list">
+									<li>Application: <a href="http://kgi-dev.fgg.uni-lj.si/ziga/cgmapp">http://kgi-dev.fgg.uni-lj.si/ziga/cgmapp</a></li>
+									<li>More: <a href="http://kgi-dev.fgg.uni-lj.si/ziga/page/activities/cgm_app">http://kgi-dev.fgg.uni-lj.si/ziga/page/activities/cgm_app</a></li>
+								</ul>
 							</div>	
 						</div>
 					</div>
@@ -104,6 +160,34 @@
 								<p>Shake91 GUI is a graphical user interface designed for Shake91 program.</p>
 							</div>	
 							<div class="small-12 medium-6 columns text-center">
+								<div class="flexslider" id="slider_cgm">
+									<ul class="slides">
+										<li>
+											<img src="./img/shake91_gui_0.png" alt="" />
+										</li>
+										<li>
+											<img src="./img/shake91_gui_1.png" alt="" />
+										</li>
+										<li>
+											<img src="./img/shake91_gui_4.png" alt="" />
+										</li>
+										<li>
+											<img src="./img/shake91_gui_5.png" alt="" />
+										</li>
+										<li>
+											<img src="./img/shake91_gui_6.png" alt="" />
+										</li>
+										<li>
+											<img src="./img/shake91_gui_7.png" alt="" />
+										</li>
+										<li>
+											<img src="./img/shake91_gui_9.png" alt="" />
+										</li>
+										<li>
+											<img src="./img/shake91_gui_10.png" alt="" />
+										</li>
+									</ul>
+								</div>	
 							</div>	
 						</div>
 					</div>
@@ -118,7 +202,7 @@
 							</div>	
 							<div class="small-12 medium-6 columns">
 								<h2>Other</h2>
-								<p>Lorem ipsum ...</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							</div>	
 						</div>
 					</div>
