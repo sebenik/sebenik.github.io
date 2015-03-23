@@ -52,8 +52,9 @@ $(document).ready(function(){
 		
 	}
 	function openMenu(){
+		$(".menu").css('height', '150px');
 		$(".menu-item").each(function(i){
-			var delay=i*0.08;
+			var delay=i*0.08 + .2;
 
 			var $bounce=$(this).children(".menu-item-bounce");
 
@@ -132,7 +133,12 @@ $(document).ready(function(){
 				force3D:true,
 				ease:Quint.easeIn
 			});
+
 		})
+
+		setTimeout(function() {
+			$(".menu").css('height', '50px');
+		},500)
 	}
 
 })
