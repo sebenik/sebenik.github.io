@@ -38,6 +38,7 @@ a {
 	color: #ffcc33;
 }
 a span{
+	font-weight: 100;
 	color: #e2e2e2;
 }
 a:hover {
