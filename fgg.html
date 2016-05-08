@@ -105,7 +105,21 @@
           <div class="row">
             <div class="panel">
               <div class="panel_content">
-                <div class="small-12 medium-6 columns text-center">
+                <div class="small-12 medium-6 medium-push-6 columns">
+                  <h2>CGM application (beta)</h2>
+                  <p>Web application for selection of so called characteristic ground motions proposed by <a href="http://www.smartengineering.si/activities/method_3r">3R method</a> (M. Dolšek, M. Brozovič). It adopts 4 tier system architecture:</p>
+                  <ul class="list">
+                    <li>Client tier - provides user interface and runs in clients' browser (HTML5, CSS3 & D3.js)</li>
+                    <li>Web tier - handles user requests and provides cross tier communication (PHP)</li>
+                    <li>Application tier - runs computational demanding tasks which are managed with HTCondor. (runs custom software devoleped in C, Tcl and OpenSees)</li>
+                    <li>Database tier - application is backed with IKPIR database that contains around 18.000 horizontal ground motion components.</li>
+                  </ul>
+                  <ul class="list">
+                    <li>Application: <a href="http://cgm.smartengineering.si">cgm.smartengineering.si</a></li>
+                    <li>More: <a href="http://www.smartengineering.si/activities/cgm_app">www.smartengineering.si/activities/cgm_app</a></li>
+                  </ul>
+                </div>	
+                <div class="small-12 medium-6 medium-pull-6 columns text-center">
                   <div class="flexslider" id="slider_cgm">
                     <ul class="slides">
                       <li>
@@ -133,20 +147,6 @@
                     </ul>
                   </div>
                 </div>	
-                <div class="small-12 medium-6 columns">
-                  <h2>CGM application</h2>
-                  <p>Web application for selection of so called characteristic ground motions proposed by 3R method. It adopts 4 tier system architecture:</p>
-                  <ul class="list">
-                    <li>Client tier - provides user interface and runs in clients' browser (HTML5, CSS3 & D3.js)</li>
-                    <li>Web tier - handles user requests and provides cross tier communication (PHP)</li>
-                    <li>Application tier - runs computational demanding tasks which are managed with HTCondor. (runs custom software devoleped in C, Tcl and OpenSees)</li>
-                    <li>Database tier - application is backed with IKPIR database that contains around 18.000 horizontal ground motion components.</li>
-                  </ul>
-                  <ul class="list">
-                    <li>Application: <a href="http://kgi-dev.fgg.uni-lj.si/ziga/cgmapp">http://kgi-dev.fgg.uni-lj.si/ziga/cgmapp</a></li>
-                    <li>More: <a href="http://kgi-dev.fgg.uni-lj.si/ziga/page/activities/cgm_app">http://kgi-dev.fgg.uni-lj.si/ziga/page/activities/cgm_app</a></li>
-                  </ul>
-                </div>	
               </div>
             </div>
           </div>
@@ -157,11 +157,86 @@
             <div class="panel">
               <div class="panel_content">
                 <div class="small-12 medium-6 columns">
+                  <h2>SMART applications</h2>
+                  <p>SMART applications webpage will host several <span>S</span>eis<span>M</span>ic <span>A</span>nalysis and <span>R</span>isk <span>T</span>argeted web applications. It's still a work in progress but all applications are already working and are in phase of testing.</p>
+                  <p>Current applicatoins:</p>
+                  <ul class="list">
+                    <li>
+                      CGM app
+                      <br />
+                      New CGM application is going to replace the current <a href="http://cgm.smartengineering.si">beta version</a>, where some minor bugs were found.
+                    </li>
+                    <li>
+                      Qfactor app
+                      <br />
+                      Application is in phase of testing. Description and use cases are coming soon.
+                    </li>
+                    <li>
+                      IKPIR strong ground motion database app
+                      <br />
+                      Application provides a graphical user interface for searching through IKPIR strong ground motion database based on multiple ground motion criteria. It also provides plots, basic statistics and geolocations of ground motions and allows users to download selected records.
+                    </li>
+                    <li>
+                      IKPIR strong ground motion web API
+                      <br />
+                      Public web API was developed that allows users to search and access data from IKPIR strong ground motion database from other applications. User must obtain a private KEY that allows data access. For the time being, user should provide a reason to use this data and obtain a key upon our approval of the request. We will also provide a MATLAB library, that allows remote connection with IKPIR strong ground motion database.
+                    </li>
+                  </ul>
+                  <ul class="list">
+                    <li>Temporary locaton: <a href="http://dev3.sebenik.com">dev3.sebenik.com</a><br />
+                      <div style="font-size:12px;">If you want to test the applications and don't want to register, send me an <a href="mailto:ziga@sebenik.com?subject=SMART applications credentials">email</a> to recieve temporary  username and password.</div>
+                    </li>
+                  </ul>
+                </div>	
+                <div class="small-12 medium-6 columns text-center">
+                  <div class="flexslider" id="slider_cgm">
+                    <ul class="slides">
+                      <li>
+                        <img src="./img/smart_apps_home.png" alt="SMART applications homepage" />
+											  <p class="flex-caption">SMART applications home page</p>
+                      </li>
+                      <li>
+                        <img src="./img/cgm_input.png" alt="New CGMapp input page" />
+											  <p class="flex-caption">New CGM app input page</p>
+                      </li>
+                      <li>
+                        <img src="./img/cgm_results.png" alt="New CGMapp results page" />
+											  <p class="flex-caption">New CGM app results page</p>
+                      </li>
+                      <li>
+                        <img src="./img/qfactor_input.png" alt="Qfactor app input page" />
+											  <p class="flex-caption">Qfactor app input page</p>
+                      </li>
+                      <li>
+                        <img src="./img/qfactor_results.png" alt="Qfactor app results page" />
+											  <p class="flex-caption">Some Qfactor app results</p>
+                      </li>
+                      <li>
+                        <img src="./img/qfactor_api.png" alt="Qfactor web API" />
+											  <p class="flex-caption">Example of Qfactor web API (MATLAB)</p>
+                      </li>
+                      <li>
+                        <img src="./img/sgmdb_all.png" alt="IKPIR strong ground motion app" />
+											  <p class="flex-caption">IKPIR strong ground motion database app</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>	
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="row">
+            <div class="panel">
+              <div class="panel_content">
+                <div class="small-12 medium-6 medium-push-6 columns">
                   <h2>Shake91-GUI</h2>
                   <p>Shake91-GUI is a graphical user interface designed for <a href="http://nisee.berkeley.edu/elibrary/Software/SHAKE91ZIP">Shake91 program</a>, used for equivalent linear seismic response analysis of horizontally layered soil deposits.</p>
                   <p> Shake-GUI is written in C# (.NET). It enables quick soil profile and load case definitions. It enables multiple analyses with different loads for the same soil profile. Ground motion records can be imported localy from files or remotely from IKPIR Strong Motion Database. Original Fortran soure code of Shake91 was modified, so that now supports use of ground motion recordings with more than 8196 steps. Shake91-GUI also provides means to view and plot results.</p>
                 </div>	
-                <div class="small-12 medium-6 columns text-center">
+                <div class="small-12 medium-6 medium-pull-6 columns text-center">
                   <div class="flexslider" id="slider_cgm">
                     <ul class="slides">
                       <li>
@@ -200,6 +275,13 @@
           <div class="row">
             <div class="panel">
               <div class="panel_content">
+                <div class="small-12 medium-6 columns">
+                  <h2>Other</h2>
+                  <ul class="list">
+                    <li><a href="http://opensees.berkeley.edu/">OpenSees</a> development - reimplementation of elements and materials (some developed by <a href="http://cobiss5.izum.si/scripts/cobiss?command=DISPLAY&base=99999&rid=3628385&fmt=11&lani=si">Jaka Zevnik</a>) in to dynamic libraries for Linux and Windows.</li>
+                    <li><p><a href="http://www.smartengineering.si">SMART ENGINEERING</a> - Website for <span>S</span>eismic <span>A</span>nalysis & <span>R</span>isk <span>T</span>argeted engineering.</p></li>
+                  </ul>
+                </div>	
                 <div class="small-12 medium-6 columns text-center">
                   <div class="flexslider" id="slider_cgm">
                     <ul class="slides">
@@ -211,13 +293,6 @@
                       </li>
                     </ul>
                   </div>	
-                </div>	
-                <div class="small-12 medium-6 columns">
-                  <h2>Other</h2>
-                  <ul class="list">
-                    <li>OpenSees development - reimplementation of elements and materials (some developed by <a href="http://eds.a.ebscohost.com/eds/detail/detail?hid=4105&lg=1&sid=84b23e07-5d79-47c6-95c5-c91641c5133d%40sessionmgr4005&vid=3&bdata=Jmxhbmc9c2wmc2l0ZT1lZHMtbGl2ZQ%253d%253d&bdata=JnNpdGU9ZWRzLWxpdmU%3d#db=cat02630a&AN=ulj.3628385">Jaka Zevnik</a>) in to dynamic libraries for Linux and Windows.</li>
-                    <li><a href="http://www.smartengineering.si">SMART ENGINEERING</a> - Website for Seismic Analysis & Risk Targeted engineering.</li>
-                  </ul>
                 </div>	
               </div>
             </div>
