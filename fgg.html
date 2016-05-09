@@ -76,7 +76,7 @@
               <div class="panel_content">
                 <div class="small-12 medium-6 columns">
                   <h2>IKPIR Strong Motion Database</h2>
-                  <p>IKPIR database contains <span>9188</span> ground motion records from over 37 countries. Each record consists of 3 recorded ground motions (2 horizontal & 1 vertical component). For each component acceleration spectrum with 5% applied damping was calculated, which are also stored in database. Additionally there is a broad range of meta-data available for each record, ranging from earthquake associated data to data associated with recording location site.</p>
+                  <p>IKPIR database contains <span>9188</span> ground motion records from 39 countries. Each record consists of 3 recorded ground motions (2 horizontal & 1 vertical component). For each component acceleration spectrum with 5% applied damping was calculated, which are also stored in a database. Additionally there is a broad range of meta-data available for each record, ranging from earthquake associated data to data associated with recording location site.</p>
                   <p>Strong motion records were gethered from two sources:</p>
                   <ul class="list">
                     <li>PEER ground motion database: <a href="http://ngawest2.berkeley.edu/">http://ngawest2.berkeley.edu/</a></li>
@@ -123,26 +123,32 @@
                   <div class="flexslider" id="slider_cgm">
                     <ul class="slides">
                       <li>
-                        <iframe id="youtubevideo" width="640" height="385" src="http://www.youtube.com/embed/Fn9ACVTHHlE?enablejsapi=1&rel=0" allowfullscreen frameborder="0">
-                        </iframe>
+                        <iframe id="youtubevideo" width="640" height="385" src="http://www.youtube.com/embed/Fn9ACVTHHlE?enablejsapi=1&rel=0" allowfullscreen frameborder="0"></iframe>
+											  <p class="flex-caption">Workflow example</p>
                       </li>
                       <li>
                         <img src="./img/cgmapp_0.png" alt="CGM application" />
-                      </li>
-                      <li>
-                        <img src="./img/cgmapp_1.png" alt="CGM application" />
-                      </li>
-                      <li>
-                        <img src="./img/cgmapp_2.png" alt="CGM application" />
-                      </li>
-                      <li>
-                        <img src="./img/cgmapp_3.png" alt="CGM application" />
+											  <p class="flex-caption">Input for ground motion selection</p>
                       </li>
                       <li>
                         <img src="./img/cgmapp_4.png" alt="CGM application" />
+											  <p class="flex-caption">Input for SDOF model</p>
+                      </li>
+                      <li>
+                        <img src="./img/cgmapp_1.png" alt="CGM application" />
+											  <p class="flex-caption">Results presented with geolocation informations</p>
+                      </li>
+                      <li>
+                        <img src="./img/cgmapp_2.png" alt="CGM application" />
+											  <p class="flex-caption">Incremental dynamic analysis results</p>
+                      </li>
+                      <li>
+                        <img src="./img/cgmapp_3.png" alt="CGM application" />
+											  <p class="flex-caption">Target, mean and selected spectra results along with standard deviations</p>
                       </li>
                       <li>
                         <img src="./img/cgmapp_5.png" alt="CGM application" />
+											  <p class="flex-caption">Characteristic ground motion results</p>
                       </li>
                     </ul>
                   </div>
@@ -234,34 +240,42 @@
                 <div class="small-12 medium-6 medium-push-6 columns">
                   <h2>Shake91-GUI</h2>
                   <p>Shake91-GUI is a graphical user interface designed for <a href="http://nisee.berkeley.edu/elibrary/Software/SHAKE91ZIP">Shake91 program</a>, used for equivalent linear seismic response analysis of horizontally layered soil deposits.</p>
-                  <p> Shake-GUI is written in C# (.NET). It enables quick soil profile and load case definitions. It enables multiple analyses with different loads for the same soil profile. Ground motion records can be imported localy from files or remotely from IKPIR Strong Motion Database. Original Fortran soure code of Shake91 was modified, so that now supports use of ground motion recordings with more than 8196 steps. Shake91-GUI also provides means to view and plot results.</p>
+                  <p> Shake-GUI is written in C# (.NET). It enables quick soil profile and load case definitions. It enables multiple analyses with different loads for the same soil profile. Ground motion records can be imported localy from files or remotely from IKPIR Strong Motion Database. Original Fortran soure code of Shake91 was modified, so that now supports use of ground motion recordings with more than 8196 steps. Shake91-GUI also provides means to view and plot results and export data to Microsoft Excel.</p>
                 </div>	
                 <div class="small-12 medium-6 medium-pull-6 columns text-center">
                   <div class="flexslider" id="slider_cgm">
                     <ul class="slides">
                       <li>
                         <img src="./img/shake91_gui_0.png" alt="" />
+											  <p class="flex-caption">Shake91_GUI install screen.</p>
                       </li>
                       <li>
                         <img src="./img/shake91_gui_1.png" alt="" />
+											  <p class="flex-caption">Main input page.</p>
                       </li>
                       <li>
                         <img src="./img/shake91_gui_4.png" alt="" />
+											  <p class="flex-caption">Import ground motions directly from IKPIR strong ground motion database.</p>
                       </li>
                       <li>
                         <img src="./img/shake91_gui_5.png" alt="" />
+											  <p class="flex-caption">Save ground motions in local library.</p>
                       </li>
                       <li>
                         <img src="./img/shake91_gui_6.png" alt="" />
+											  <p class="flex-caption">Creacte multiple loade cases at once.</p>
                       </li>
                       <li>
                         <img src="./img/shake91_gui_7.png" alt="" />
+											  <p class="flex-caption">Results: material and soil profile.</p>
                       </li>
                       <li>
                         <img src="./img/shake91_gui_9.png" alt="" />
+											  <p class="flex-caption">Results: motions in sublayers.</p>
                       </li>
                       <li>
                         <img src="./img/shake91_gui_10.png" alt="" />
+											  <p class="flex-caption">Results: soil factor and response spectra.</p>
                       </li>
                     </ul>
                   </div>	
