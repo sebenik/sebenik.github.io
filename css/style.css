@@ -71,6 +71,10 @@ hr {
 	margin: 0 0 30px 0;
 }
 
+.header {
+  margin-top: 10px;
+}
+
 .main-title {
   margin-bottom: 50px;
 }
